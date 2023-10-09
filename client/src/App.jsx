@@ -6,9 +6,9 @@ import {
   About,
   AuthPage,
   CompanyProfile,
-  EventDetail,
-  FindEvents,
-  UploadEvent,
+  JobDetail,
+  FindJobs,
+  UploadJob,
   UserProfile,
 } from "./pages";
 
@@ -31,9 +31,9 @@ function App() {
         <Route element={<Layout />}>
           <Route
             path="/"
-            element={<Navigate to="find-events" replace={true} />}
+            element={<Navigate to="find-jobs" replace={true} />}
           />
-          <Route path="/find-events" element={<FindEvents />} />
+          <Route path="/find-jobs" element={<FindJobs />} />
           <Route
             path={
               user?.user?.accountType === "seeker"
@@ -45,8 +45,8 @@ function App() {
 
           <Route path={"/company-profile"} element={<CompanyProfile />} />
           <Route path={"/company-profile/:id"} element={<CompanyProfile />} />
-          <Route path={"/upload-event"} element={<UploadEvent />} />
-          <Route path={"/event-detail/:id"} element={<EventDetail />} />
+          <Route path={"/upload-job"} element={<UploadJob />} />
+          <Route path={"/job-detail/:id"} element={<JobDetail />} />
         </Route>
 
         <Route path="/about-us" element={<About />} />
