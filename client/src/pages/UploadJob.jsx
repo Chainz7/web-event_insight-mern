@@ -62,7 +62,7 @@ const UploadJob = () => {
                   name="salary"
                   label="HTM (RP)"
                   placeholder="eg. 50000"
-                  type="number"
+                  type="text"
                   register={register("salary", {
                     required: "HTM is required",
                   })}
@@ -72,7 +72,7 @@ const UploadJob = () => {
             </div>
 
             <div className="w-full flex gap-4">
-              <div className="w-1/3">
+              <div className="w-1/2">
                 <TextInput
                   name="date"
                   label="Date"
@@ -85,22 +85,9 @@ const UploadJob = () => {
                 />
               </div>
 
-              <div className={`w-1/3 mt-2`}>
+              <div className={`w-1/2 mt-2`}>
                 <label className="text-gray-600 text-sm mb-1">Day</label>
                 <DayTypes dayTitle={dayTitle} setDayTitle={setDayTitle} />
-              </div>
-
-              <div className="w-1/3">
-                <TextInput
-                  name="cp"
-                  label="Contact Person"
-                  placeholder="eg. 0819248914"
-                  type="number"
-                  register={register("experience", {
-                    required: "CP is required",
-                  })}
-                  error={errors.experience ? errors.experience?.message : ""}
-                />
               </div>
             </div>
 
@@ -114,6 +101,17 @@ const UploadJob = () => {
               })}
               error={errors.location ? errors.location?.message : ""}
             />
+            <TextInput
+              name="cp"
+              label="Contact Person"
+              placeholder="eg. 0819248914"
+              type="number"
+              register={register("experience", {
+                required: "CP is required",
+              })}
+              error={errors.experience ? errors.experience?.message : ""}
+            />
+
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm mb-1">
                 Event Description
