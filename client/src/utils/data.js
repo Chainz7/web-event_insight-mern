@@ -10,7 +10,7 @@ import {
   CodeWave,
 } from "../assets";
 
-export const jobTypes = ["Full-Time", "Part-Time", "ContracT", "Intern"];
+export const jobTypes = ["Product", "Workshop", "Festival"];
 
 export const experience = [
   { title: "Under 1 Year", value: "0-1" },
@@ -20,14 +20,14 @@ export const experience = [
 ];
 
 export const popularSearch = [
-  "Software Engineer",
-  "Developer",
-  "Full-Stack Developer",
-  "Data Scientist",
-  "Remote",
-  "Full-Time",
-  "Sales",
-  "Office Assistant",
+  "Food",
+  "Product",
+  "Festival",
+  "Workshop",
+  "Tournament",
+  "Music Stage",
+  "School Touring",
+  "Performing Arts",
 ];
 
 export const jobs = [
