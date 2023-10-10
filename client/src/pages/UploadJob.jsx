@@ -139,6 +139,13 @@ const UploadJob = () => {
                 {errMsg}
               </span>
             )}
+            <div className="flex flex-col">
+              <label className="text-gray-600 text-sm mb-1">Event Poster</label>
+              <input
+                type="file"
+                onChange={(e) => setProfileImage(e.target.files[0])}
+              />
+            </div>
             <div className="mt-2">
               <CustomButton
                 type="submit"

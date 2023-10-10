@@ -8,7 +8,6 @@ import ListBox from "./ListBox";
 import JobCard from "./JobCard";
 import JobTypes from "./JobTypes";
 import DayTypes from "./DayTypes";
-import About from "./About";
 import Loading from "./Loading";
 
 export {
