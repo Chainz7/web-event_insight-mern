@@ -115,7 +115,10 @@ const Navbar = () => {
               <Link to="/">Find Event</Link>
             </li>
             <li>
-              <Link to="/upload-event">Upload Event</Link>
+              <Link to="/upload-job">Upload Event</Link>
+            </li>
+            <li>
+              <Link to="/companies">Promotor</Link>
             </li>
             <li>
               <Link to="/about-us">About</Link>

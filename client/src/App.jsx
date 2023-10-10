@@ -5,6 +5,7 @@ import { Footer, Navbar } from "./components";
 import {
   About,
   AuthPage,
+  Companies,
   CompanyProfile,
   JobDetail,
   FindJobs,
@@ -35,6 +36,7 @@ function App() {
             element={<Navigate to="find-jobs" replace={true} />}
           />
           <Route path="/find-jobs" element={<FindJobs />} />
+          <Route path="/companies" element={<Companies />} />
           <Route
             path={
               user?.user?.accountType === "seeker"
