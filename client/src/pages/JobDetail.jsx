@@ -133,7 +133,7 @@ const JobDetail = () => {
 
         {/* RIGHT SIDE */}
         <div className="w-full md:w-1/3 2xl:w-2/4 p-5 mt-20 md:mt-0">
-          <p className="text-gray-500 font-semibold">Similar Job Post</p>
+          <p className="text-gray-500 font-semibold">Similar Event</p>
 
           <div className="w-full flex flex-wrap gap-4">
             {jobs?.slice(0, 6).map((job, index) => (

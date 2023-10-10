@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Fragment, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { BiChevronDown } from "react-icons/bi";
@@ -7,6 +8,7 @@ import { AiOutlineClose, AiOutlineLogout } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { CustomButton } from "./";
 import { users } from "../utils/data";
+import { useSelector } from "react-redux";
 
 function MenuList({ user, onClick }) {
   const handleLogOut = () => {};
@@ -93,7 +95,7 @@ function MenuList({ user, onClick }) {
   );
 }
 const Navbar = () => {
-  const user = users[1];
+  const user = useSelector((state) => state.user);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseNavbar = () => {
@@ -117,9 +119,9 @@ const Navbar = () => {
             <li>
               <Link to="/upload-job">Upload Event</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/companies">Promotor</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/about-us">About</Link>
             </li>

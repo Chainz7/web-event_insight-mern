@@ -6,6 +6,9 @@ import SignUp from "./SignUp";
 import Header from "./Header";
 import ListBox from "./ListBox";
 import JobCard from "./JobCard";
+import JobTypes from "./JobTypes";
+import DayTypes from "./DayTypes";
+import Loading from "./Loading";
 
 export {
   Navbar,
@@ -16,4 +19,7 @@ export {
   Header,
   ListBox,
   JobCard,
+  JobTypes,
+  DayTypes,
+  Loading,
 };

@@ -1,11 +1,12 @@
 // @ts-nocheck
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { BsStars, BsCalendarDate } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import Header from "../components/Header";
+import Loading from "../components/Loading";
 import { experience, jobTypes, jobs } from "../utils/data";
 import { CustomButton, JobCard, ListBox } from "../components";
 
@@ -23,6 +24,8 @@ const FindJobs = () => {
 
   const [isFetching, setIsFetching] = useState(false);
 
+  // const [isLoading, setIsLoading] = useState(false);
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -37,6 +40,10 @@ const FindJobs = () => {
   const filterExperience = async (e) => {
     setFilterExp(e);
   };
+
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
 
   return (
     <div>
