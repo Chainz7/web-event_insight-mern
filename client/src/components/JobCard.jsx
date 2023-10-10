@@ -6,10 +6,7 @@ import { Link } from "react-router-dom";
 const JobCard = ({ job }) => {
   return (
     <Link to={`/job-detail/${job?.id}`}>
-      <div
-        className="w-full md:w-[20.4rem] 2xl:w-[18rem] h-[16rem] md:h-[18rem] bg-white flex flex-col justify-between shadow-lg 
-                rounded-md px-3 py-5 "
-      >
+      <div className="w-full md:w-[20.4rem] 2xl:w-[24.5rem] h-[16rem] md:h-[18rem] bg-white flex flex-col justify-between shadow-lg rounded-md p-5 ">
         <div className="flex gap-3">
           <img
             src={job?.company?.profileUrl}
@@ -17,8 +14,10 @@ const JobCard = ({ job }) => {
             className="w-14 h-14"
           />
 
-          <div className="">
-            <p className="text-lg font-semibold truncate">{job?.jobTitle}</p>
+          <div>
+            <span className="text-lg font-semibold truncate">
+              {job?.jobTitle}
+            </span>
             <span className="flex gap-2 items-center">
               <GoLocation className="text-slate-900 text-sm" />
               {job?.location}

@@ -58,7 +58,7 @@ const FindJobs = () => {
       />
 
       <div className="container mx-auto flex gap-6 2xl:gap-10 md:px-5 py-0 md:py-6 bg-[#f7fdfd]">
-        <div className="hidden md:flex flex-col w-1/6 h-fit bg-white shadow-sm">
+        <div className="hidden md:flex flex-col w-1/6 h-fit bg-white shadow-md p-5">
           <p className="text-lg font-semibold text-slate-600">Filter Search</p>
 
           <div className="py-2">
@@ -92,7 +92,7 @@ const FindJobs = () => {
             <div className="flex justify-between mb-3">
               <p className="flex items-center gap-2 font-semibold">
                 <BsCalendarDate />
-                Date
+                Day
               </p>
 
               <button>
@@ -119,7 +119,7 @@ const FindJobs = () => {
         <div className="w-full md:w-5/6 px-5 md:px-0">
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm md:text-base">
-              Shwoing: <span className="font-semibold">1,902</span> Events
+              Showing: <span className="font-semibold">1,904</span> Events
               Available
             </p>
 

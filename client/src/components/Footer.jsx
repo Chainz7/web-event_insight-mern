@@ -96,7 +96,7 @@ const Footer = () => {
             </p>
 
             <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-300 text-sm">
-              Designed by Chainz
+              Designed by Praksis
             </span>
           </div>
         </div>

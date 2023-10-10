@@ -24,7 +24,7 @@ const JobDetail = () => {
         {/* LEFT SIDE */}
         <div className="w-full h-fit md:w-2/3 2xl:2/4 bg-white px-5 py-10 md:px-10 shadow-md">
           <div className="w-full flex items-center justify-between">
-            <div className="w-3/4 flex gap-2">
+            <div className="w-3/4 flex gap-4">
               <img
                 src={job?.company?.profileUrl}
                 alt={job?.company?.name}
@@ -91,7 +91,7 @@ const JobDetail = () => {
             <CustomButton
               onClick={() => setSelected("1")}
               title="Event Poster"
-              containerStyles={`w-full flex items-center justify-center  py-3 px-5 outline-none rounded-full text-sm ${
+              containerStyles={`w-full flex items-center justify-center py-3 px-5 outline-none rounded-full text-sm ${
                 selected === "1"
                   ? "bg-black text-white"
                   : "bg-white text-black border border-gray-300"
@@ -106,19 +106,23 @@ const JobDetail = () => {
 
                 <span className="text-base">{job?.detail[0]?.desc}</span>
 
-                {/* {job?.detail[0]?.requirement && (
+                {job?.detail[0]?.requirement && (
                   <>
-                    <p className="text-xl font-semibold mt-8">Requirement</p>
+                    <p className="text-xl font-semibold mt-8">
+                      Link Registration
+                    </p>
                     <span className="text-base">
                       {job?.detail[0]?.requirement}
                     </span>
                   </>
-                )} */}
+                )}
               </>
             ) : (
               <>
                 <p className="text-xl font-semibold">Event Poster</p>
-                <img src={job?.posterUrl} />
+                <div className="flex justify-center">
+                  <img src={job?.posterUrl} />
+                </div>
               </>
             )}
           </div>

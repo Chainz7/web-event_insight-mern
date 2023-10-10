@@ -155,18 +155,18 @@ const Navbar = () => {
           } container mx-auto lg:hidden flex-col pl-8 gap-3 py-5`}
         >
           <Link to="/" onClick={handleCloseNavbar}>
-            Find Job
+            Find Event
           </Link>
-          <Link to="/companies" onClick={handleCloseNavbar}>
+          {/* <Link to="/companies" onClick={handleCloseNavbar}>
             Companies
-          </Link>
+          </Link> */}
           <Link
             onClick={handleCloseNavbar}
             to={
               user?.accountType === "seeker" ? "applly-gistory" : "upload-job"
             }
           >
-            {user?.accountType === "seeker" ? "Applications" : "Upload Job"}
+            {user?.accountType === "seeker" ? "Applications" : "Upload Event"}
           </Link>
           <Link to="/about-us" onClick={handleCloseNavbar}>
             About

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import NoProfile from "./userprofile.png";
 import HeroImage from "./hero.png";
 import Google from "./google.png";
@@ -12,7 +13,15 @@ import JobImg from "./job.jpg";
 import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
 import UinMalang from "./UIN.png";
-import Poster from "./Poster.jpg";
+import Poster1 from "./Poster1.jpg";
+import Poster2 from "./Poster2.jpg";
+import Poster3 from "./Poster3.jpg";
+import Poster4 from "./Poster4.jpg";
+import Poster5 from "./Poster5.jpg";
+import Poster6 from "./Poster6.jpg";
+import Poster7 from "./Poster7.jpg";
+import Poster8 from "./Poster8.jpg";
+import Poster9 from "./Poster9.jpg";
 
 export {
   CodeWave,
@@ -29,5 +38,13 @@ export {
   Office,
   JobImg,
   UinMalang,
-  Poster,
+  Poster1,
+  Poster2,
+  Poster3,
+  Poster4,
+  Poster5,
+  Poster6,
+  Poster7,
+  Poster8,
+  Poster9,
 };
