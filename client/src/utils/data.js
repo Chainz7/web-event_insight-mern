@@ -80,7 +80,7 @@ export const jobs = [
       profileUrl: UinMalang,
     },
     jobTitle: "Matcha Beauty Town!",
-    location: "Kota Kasablanka, GF Floor",
+    location: "Kota Kasablanka",
     jobType: "Showcase",
     salary: "Free",
     day: "Senin",

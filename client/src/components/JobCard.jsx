@@ -9,9 +9,9 @@ const JobCard = ({ job }) => {
       <div className="w-full md:w-[20.4rem] 2xl:w-[24.5rem] h-[16rem] md:h-[18rem] bg-white flex flex-col justify-between shadow-lg rounded-md p-5 ">
         <div className="flex gap-3">
           <img
-            src={job?.company?.profileUrl}
+            src={job?.posterUrl}
             alt={job?.company?.name}
-            className="w-14 h-14"
+            className="w-20 h-20 rounded"
           />
 
           <div>
