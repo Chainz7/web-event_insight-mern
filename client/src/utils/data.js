@@ -9,6 +9,7 @@ import {
   Facebook,
   CodeWave,
   UinMalang,
+  Poster,
 } from "../assets";
 
 export const jobTypes = ["Product", "Workshop", "Festival"];
@@ -33,22 +34,25 @@ export const jobs = [
   {
     id: "1",
     company: {
-      name: "Uin Malang",
-      location: "Uin Malang",
-      email: "0823812723",
+      name: "Kelompok Praksis",
+      location: "UM",
+      email: "um@support.id",
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Google,
     },
     jobTitle: "FITK FESTIVAL 2022",
-    location: "UIN Malang",
+    location: "Aula UIN Malang",
     jobType: "Festival",
-    salary: "1200",
+    salary: "Free",
+    day: "Rabu",
+    cp: "0823812723",
+    date: "10 / 12 / 2023",
+    posterUrl: Poster,
     detail: [
       {
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-
+        desc: "Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!! Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!! Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!! Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!! Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!! Assalamu'alaikum Warahmatullahi Wabarakatuh Hallo sobat FIFA DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!! Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!!",
         requirement:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       },
@@ -408,7 +412,7 @@ export const users = [
     token: "gjhsdgsjgdjh",
   },
   {
-    firstName: "CodeWaver",
+    firstName: "Chainz",
     lastName: "Solutions",
     email: "support@code.com",
     contact: "support@google",

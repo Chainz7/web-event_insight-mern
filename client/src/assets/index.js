@@ -12,6 +12,7 @@ import JobImg from "./job.jpg";
 import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
 import UinMalang from "./UIN.png";
+import Poster from "./Poster.jpg";
 
 export {
   CodeWave,
@@ -28,4 +29,5 @@ export {
   Office,
   JobImg,
   UinMalang,
+  Poster,
 };

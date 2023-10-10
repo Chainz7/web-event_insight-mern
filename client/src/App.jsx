@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Outlet, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
