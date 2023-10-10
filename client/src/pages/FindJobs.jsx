@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { BiBriefcaseAlt2 } from "react-icons/bi";
-import { BsStars } from "react-icons/bs";
+import { BsStars, BsCalendarDate } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import Header from "../components/Header";
 import { experience, jobTypes, jobs } from "../utils/data";
-import { ListBox } from "../components";
+import { CustomButton, JobCard, ListBox } from "../components";
 
 const FindJobs = () => {
   const [sort, setSort] = useState("Newest");
@@ -57,7 +56,7 @@ const FindJobs = () => {
           <div className="py-2">
             <div className="flex justify-between mb-3">
               <p className="flex items-center gap-2 font-semibold">
-                <BiBriefcaseAlt2 />
+                <BsStars />
                 Event
               </p>
 
@@ -84,8 +83,8 @@ const FindJobs = () => {
           <div className="py-2 mt-4">
             <div className="flex justify-between mb-3">
               <p className="flex items-center gap-2 font-semibold">
-                <BsStars />
-                Experience
+                <BsCalendarDate />
+                Date
               </p>
 
               <button>
@@ -123,7 +122,7 @@ const FindJobs = () => {
             </div>
           </div>
 
-          {/* <div className="w-full flex flex-wrap gap-4">
+          <div className="w-full flex flex-wrap gap-4">
             {jobs.map((job, index) => (
               <JobCard job={job} key={index} />
             ))}
@@ -136,7 +135,7 @@ const FindJobs = () => {
                 containerStyles={`text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600`}
               />
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </div>
