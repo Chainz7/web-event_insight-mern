@@ -68,6 +68,8 @@ const SignUp = ({ open, setOpen }) => {
                   <div className="w-full flex items-center justify-center py-4">
                     <button
                       className={`flex-1 px-4 py-2 rounded text-sm outline-none ${
+                        !isRegister ? "" : "hidden"
+                      } ${
                         accountType === "seeker"
                           ? "bg-[#1d4fd862] text-blue-900 font-semibold"
                           : "bg-white border border-blue-400"
@@ -76,9 +78,11 @@ const SignUp = ({ open, setOpen }) => {
                     >
                       User Account
                     </button>
-                    // FIX
+
                     <button
                       className={`flex-1 px-4 py-2 rounded text-sm outline-none ${
+                        !isRegister ? "" : "hidden"
+                      } ${
                         accountType !== "seeker"
                           ? "bg-[#1d4fd862] text-blue-900 font-semibold"
                           : "bg-white border border-blue-400"
@@ -108,7 +112,7 @@ const SignUp = ({ open, setOpen }) => {
                       <div className="w-full flex gap-1 md:gap-2">
                         <div
                           className={`${
-                            accountType === "seeker" ? "w-1/2" : "w-full"
+                            accountType === "seeker" ? "w-1/2 pr-2" : "w-full"
                           }`}
                         >
                           <TextInput
@@ -148,7 +152,7 @@ const SignUp = ({ open, setOpen }) => {
                         </div>
 
                         {accountType === "seeker" && isRegister && (
-                          <div className="w-1/2">
+                          <div className="w-1/2 pr-2">
                             <TextInput
                               name="lastName"
                               label="Last Name"
@@ -167,7 +171,9 @@ const SignUp = ({ open, setOpen }) => {
                     )}
 
                     <div className="w-full flex gap-1 md:gap-2">
-                      <div className={`${isRegister ? "w-1/2" : "w-full"}`}>
+                      <div
+                        className={`${isRegister ? "w-1/2 pr-2" : "w-full"}`}
+                      >
                         <TextInput
                           name="password"
                           label="Password"
@@ -183,7 +189,7 @@ const SignUp = ({ open, setOpen }) => {
                       </div>
 
                       {isRegister && (
-                        <div className="w-1/2">
+                        <div className="w-1/2 pr-2">
                           <TextInput
                             label="Confirm Password"
                             placeholder="Password"
@@ -232,7 +238,9 @@ const SignUp = ({ open, setOpen }) => {
                         : "Do not have an account"}
 
                       <span
-                        className="text-sm text-blue-600 ml-2 hover:text-blue-700 hover:font-semibold cursor-pointer"
+                        className={`text-sm text-blue-600 ml-2 hover:text-blue-700 hover:font-semibold cursor-pointer ${
+                          isRegister || accountType === "seeker" ? "" : "hidden"
+                        }`}
                         onClick={() => setIsRegister((prev) => !prev)}
                       >
                         {isRegister ? "Login" : "Create Account"}
