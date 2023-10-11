@@ -64,14 +64,14 @@ const JobDetail = () => {
             <div className="bg-[#bae5f4] w-40 h-16 rounded-lg flex flex-col items-center justify-center">
               <span className="text-sm">Date</span>
               <p className="text-lg font-semibold text-gray-700">
-                {job?.date[0]}
+                {job?.dateStart}
               </p>
             </div>
 
             <div className="bg-[#fed0ab] w-40 h-16 px-6 rounded-lg flex flex-col items-center justify-center">
               <span className="text-sm">Time</span>
               <p className="text-lg font-semibold text-gray-700">
-                {job?.time[0]}
+                {job?.timeStart}
               </p>
             </div>
 

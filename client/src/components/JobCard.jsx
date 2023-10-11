@@ -41,22 +41,22 @@ const JobCard = ({ job }) => {
               <span className="md:text-sm font-semibold">Event Start</span>
               <div className="flex items-center gap-3 pt-1">
                 <BsCalendarEvent style={style} className="md:text-medium" />
-                <span className="md:text-sm">{job?.date[0]}</span>
+                <span className="md:text-sm">{job?.dateStart}</span>
               </div>
               <div className="flex items-center gap-3">
                 <BiTimeFive style={style} className="md:text-medium" />
-                <span className="md:text-sm">{job?.time[0]}</span>
+                <span className="md:text-sm">{job?.timeStart}</span>
               </div>
             </div>
             <div className="grid gap-1">
               <span className="md:text-sm font-semibold">Event End</span>
               <div className="flex items-center gap-3 pt-1">
                 <BsCalendarEvent style={style} className="md:text-medium" />
-                <span className="md:text-sm">{job?.date[1]}</span>
+                <span className="md:text-sm">{job?.dateEnd}</span>
               </div>
               <div className="flex items-center gap-3">
                 <BiTimeFive style={style} className="md:text-medium" />
-                <span className="md:text-sm">{job?.time[1]}</span>
+                <span className="md:text-sm">{job?.timeEnd}</span>
               </div>
             </div>
           </div>
