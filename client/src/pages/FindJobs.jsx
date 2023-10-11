@@ -75,7 +75,10 @@ const FindJobs = () => {
 
             <div className="flex flex-col gap-2">
               {jobTypes.map((jtype, index) => (
-                <div key={index} className="flex gap-2 text-sm md:text-base ">
+                <div
+                  key={index}
+                  className="flex gap-2 items-center text-sm md:text-base "
+                >
                   <input
                     type="checkbox"
                     value={jtype}
@@ -102,7 +105,7 @@ const FindJobs = () => {
 
             <div className="flex flex-col gap-2">
               {experience.map((exp) => (
-                <div key={exp.title} className="flex gap-3">
+                <div key={exp.title} className="flex gap-3 items-center">
                   <input
                     type="checkbox"
                     value={exp?.value}
