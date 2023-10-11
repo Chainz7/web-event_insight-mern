@@ -36,7 +36,7 @@ const JobCard = ({ job }) => {
             {job?.detail[0]?.desc?.slice(0, 145) + "..."}
           </p>
           {/* Event Start */}
-          <div className="flex justify-between pt-4 px-8 md:px-0">
+          <div className="flex justify-between pt-4 px-0">
             <div className="grid gap-1">
               <span className="md:text-sm font-semibold">Event Start</span>
               <div className="flex items-center gap-3 pt-1">
@@ -61,7 +61,7 @@ const JobCard = ({ job }) => {
             </div>
           </div>
           {/* Speaker Location */}
-          <div className="flex justify-between pt-4 px-8 md:px-0">
+          <div className="flex justify-between pt-4 px-0">
             <div className="grid gap-1">
               <span className="md:text-sm font-semibold">Location</span>
               <div className="flex items-center gap-3">
