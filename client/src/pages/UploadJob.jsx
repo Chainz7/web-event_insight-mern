@@ -74,7 +74,7 @@ const UploadJob = () => {
             <div className="w-full flex gap-4">
               <div className="w-1/2">
                 <TextInput
-                  name="date"
+                  name="dateStart"
                   label="Date Start"
                   placeholder="10 / 12 / 2023"
                   type="date"
@@ -86,7 +86,7 @@ const UploadJob = () => {
               </div>
               <div className="w-1/2">
                 <TextInput
-                  name="date"
+                  name="dateEnd"
                   label="Date End"
                   placeholder="10 / 12 / 2023"
                   type="date"
@@ -101,7 +101,7 @@ const UploadJob = () => {
             <div className="w-full flex gap-4">
               <div className="w-1/2">
                 <TextInput
-                  name="time"
+                  name="timeStart"
                   label="Time Start"
                   type="time"
                   register={register("vacancies", {
@@ -112,7 +112,7 @@ const UploadJob = () => {
               </div>
               <div className="w-1/2">
                 <TextInput
-                  name="time"
+                  name="timeEnd"
                   label="Time End"
                   type="time"
                   register={register("vacancies", {

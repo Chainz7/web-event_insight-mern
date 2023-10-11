@@ -240,7 +240,7 @@ export const footerLinks = [
   {
     id: "02",
     title: "Support",
-    links: ["Account", "Support Center", "Feedback", "Accessibility"],
+    links: ["Account", "Support Center", "Feedback"],
   },
 ];
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { useForm } from "react-hook-form";
@@ -75,6 +76,7 @@ const SignUp = ({ open, setOpen }) => {
                     >
                       User Account
                     </button>
+                    // FIX
                     <button
                       className={`flex-1 px-4 py-2 rounded text-sm outline-none ${
                         accountType !== "seeker"
