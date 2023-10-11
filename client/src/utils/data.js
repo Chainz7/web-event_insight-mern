@@ -8,7 +8,8 @@ import {
   Google,
   Facebook,
   CodeWave,
-  UinMalang,
+  Banner,
+  Unm,
   Poster1,
   Poster2,
   Poster3,
@@ -46,22 +47,25 @@ export const jobs = [
       location: "Universitas Negeri Malang",
       email: "praksis@support.id",
       contact: "0812831028312",
-      about:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      about: "Kami adalah kelompok praksis",
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
-    jobTitle: "FITK FESTIVAL 2023",
-    location: "UIN Malang",
-    jobType: "Festival",
-    salary: "50.000",
-    day: "Senin",
-    cp: "08982918294",
-    date: "02/10/2023",
-    posterUrl: Poster1,
+    jobTitle: "FITK FESTIVAL 2023", // Event Judul
+    location: "UIN Malang", // Event Lokasi
+    jobType: "Festival", // Event Tipe
+    salary: "50.000", // Event HTM
+    date: ["02/10/2023", "02/10/2023"], // Event Tanggal Mulai - Berakhir
+    time: ["10:00", "12:00"], // Event Waktu Mulai - Berakhir
+    day: "Senin", // Event Hari
+    cp: "08982918294", // Event Contact Person
+    posterUrl: Poster1, // Event Poster
     detail: [
       {
+        // Event Deskripsi
         desc: "✨ FITK FESTIVAL 2023 HADIR KEMBALI ✨.  Assalamu'alaikum Warahmatullahi Wabarakatuh. Hallo sobat FIFA 👋🏻DEMA FITK UIN Malang punya kabar baik nih untuk kalian semua!!. Yuukkk meriahkan acara FITK FESTIVAL 2023 bersama kami dengan mendaftarkan dirimu sekarang!!. more info : @demafitkuinmalang",
-        requirement: "🔗 https://linktr.ee/fitkfest2023",
+        // Event Link
+        requirement: "https://linktr.ee/fitkfest2023",
       },
     ],
     // applicants: ["1", "2", "3", "4"],
@@ -77,15 +81,17 @@ export const jobs = [
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
     jobTitle: "Matcha Beauty Town!",
     location: "Kota Kasablanka",
     jobType: "Showcase",
     salary: "Free",
+    date: ["02/10/2023", "02/10/2023"],
+    time: ["10:00", "12:00"],
     day: "Senin",
     cp: "-",
-    date: "16/10/2023",
     posterUrl: Poster2,
     detail: [
       {
@@ -93,8 +99,6 @@ export const jobs = [
         requirement: "",
       },
     ],
-    // applicants: ["1", "2", "3", "4"],
-    // vacancies: 25,
     createdAt: new Date(),
   },
   {
@@ -106,24 +110,24 @@ export const jobs = [
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
     jobTitle: "Presale Ticket 1",
     location: "MAN 4 Jakarta",
     jobType: "Showcase",
     salary: "100.000",
+    date: ["02/10/2023", "02/10/2023"],
+    time: ["10:00", "12:00"],
     day: "Senin",
     cp: "-",
-    date: "20/11/2023",
     posterUrl: Poster3,
     detail: [
       {
-        desc: "𝐆𝐎 𝐏𝐑𝐄𝐏𝐀𝐑𝐄 𝐘𝐎𝐔𝐑𝐒𝐄𝐋𝐅, 𝐁𝐎𝐅𝐌𝐀𝐓𝐄𝐒 😲‼️ 𝗣𝗿𝗲𝘀𝗮𝗹𝗲 𝘁𝗶𝗰𝗸𝗲𝘁 #𝟭 is now available ⸜(｡˃ ᵕ ˂ )⸝. Let’s go, Bofmates! We never know when it will last!. Go get yours on our ticketing page listed below ⬇️",
-        requirement: "🔗 yesplis.com/event/bofman4-part-14",
+        desc: "GO PREPARE YOURSEL BOFAT 😲‼️ Presale Ticket #1 is now available ⸜(｡˃ ᵕ ˂ )⸝. Let’s go, Bofmates! We never know when it will last!. Go get yours on our ticketing page listed below ⬇️",
+        requirement: "yesplis.com/event/bofman4-part-14",
       },
     ],
-    // applicants: ["1", "2", "3", "4"],
-    // vacancies: 25,
     createdAt: new Date(),
   },
   {
@@ -135,24 +139,24 @@ export const jobs = [
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
     jobTitle: "MIFEST COMPETITION",
     location: "Online",
     jobType: "Competition",
     salary: "45.000",
+    date: ["02/10/2023", "02/10/2023"],
+    time: ["10:00", "12:00"],
     day: "Senin",
     cp: "082818312",
-    date: "16/12/2023",
     posterUrl: Poster4,
     detail: [
       {
         desc: "Halo sobat MIfest!! 👋🏻. Setelah semua rangkaian acara MIfest yang telah kita ikuti, kini MIfest Competition hadir untuk meramaikan event dan melatih skill dalam membuat website, selain itu juga berguna untuk menambah website portofolio. MIfest Competition hadir dengan membawa tema: “Crafting a Better Tomorrow: Innovating Tech for Education and Health”",
-        requirement: "🔗 https://linktr.ee/mifest_2023",
+        requirement: "https://linktr.ee/mifest_2023",
       },
     ],
-    // applicants: ["1", "2", "3", "4"],
-    // vacancies: 25,
     createdAt: new Date(),
   },
   {
@@ -164,24 +168,24 @@ export const jobs = [
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
     jobTitle: "Car Free Day Pagi-Pagi",
     location: "Sudirman Jakarta",
     jobType: "Festival",
     salary: "Free",
+    date: ["02/10/2023", "02/10/2023"],
+    time: ["10:00", "12:00"],
     day: "Selasa",
     cp: "0873918293",
-    date: "08/10/2023",
     posterUrl: Poster5,
     detail: [
       {
-        desc: "Yuk hadir di Event 𝗮𝗯𝗰 𝗢𝗡 𝗣𝗔𝗚𝗜 – 𝗣𝗔𝗚𝗜, 𝗢𝗡 𝗦𝗘𝗣𝗔𝗡𝗝𝗔𝗡𝗚 𝗛𝗔𝗥𝗜. Kamu bisa ikuti berbagai macam activity seru GRATIS dengan total hadiah jutaan rupiah lho!! ketuk DM @abcnetwork.id untuk info lebih lanjut ya!. 𝗮𝗯𝗰 𝗣𝗥𝗜𝗠𝗘𝗕𝗢𝗢𝗦𝗧 𝗢𝗡 𝗣𝗔𝗚𝗜 – 𝗣𝗔𝗚𝗜, 𝗢𝗡 𝗦𝗘𝗣𝗔𝗡𝗝𝗔𝗡𝗚 𝗛𝗔𝗥𝗜!!See You!!",
+        desc: "Yuk hadir di Event abc on PAGI-PAGI Sepanjang hari. Kamu bisa ikuti berbagai macam activity seru GRATIS dengan total hadiah jutaan rupiah lho!! ketuk DM @abcnetwork.id untuk info lebih lanjut ya!. 𝗮𝗯𝗰 𝗣𝗥𝗜𝗠𝗘𝗕𝗢𝗢𝗦𝗧 𝗢𝗡 𝗣𝗔𝗚𝗜 – 𝗣𝗔𝗚𝗜, 𝗢𝗡 𝗦𝗘𝗣𝗔𝗡𝗝𝗔𝗡𝗚 𝗛𝗔𝗥𝗜!!See You!!",
         requirement: "",
       },
     ],
-    // applicants: ["1", "2", "3", "4"],
-    // vacancies: 25,
     createdAt: new Date(),
   },
   {
@@ -193,24 +197,24 @@ export const jobs = [
       contact: "0812831028312",
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      profileUrl: UinMalang,
+      profileUrl: Unm,
+      bannerUrl: Banner,
     },
     jobTitle: "PB CHAMPIONSHIP 2023",
     location: "Gool Futsal, Surabaya",
     jobType: "Competition",
     salary: "350.000",
+    date: ["02/10/2023", "02/10/2023"],
+    time: ["10:00", "12:00"],
     day: "Minggu",
     cp: "0238183994",
-    date: "16/12/2023",
     posterUrl: Poster6,
     detail: [
       {
         desc: "Halloo para pejuang futsal ⚽⚽. PB WEEK CHAMPIONSHIP 2023 telah hadir, tentunya dengan serangkaian acara yang seru abis dan jadilah pemenang untuk mendapatkan total hadiah jutaan rupiah🤩🤩. Tunggu apalagi segera daftarkan tim kalian!! Tunjukkan kehebatan kalian pada ajang yang seruu inii, catat tanggalnya dan bergabunglah 🙌🏻.",
-        requirement: "🔗 https://linktr.ee/pbweek2023",
+        requirement: "https://linktr.ee/pbweek2023",
       },
     ],
-    // applicants: ["1", "2", "3", "4"],
-    // vacancies: 25,
     createdAt: new Date(),
   },
 ];
@@ -218,16 +222,11 @@ export const jobs = [
 export const footerLinks = [
   {
     id: "01",
-    title: "Company",
-    links: ["Home", "About Us", "Services", "Our Team"],
-  },
-  {
-    id: "02",
     title: "Policy",
     links: ["Policies", "Contact", "FAQ"],
   },
   {
-    id: "03",
+    id: "02",
     title: "Support",
     links: ["Account", "Support Center", "Feedback", "Accessibility"],
   },
@@ -350,11 +349,11 @@ export const users = [
   {
     firstName: "User",
     lastName: "Solutions",
-    email: "support@code.com",
-    contact: "support@google",
-    about:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    profileUrl: UinMalang,
+    email: "praksis@support.id",
+    contact: "0812831028312",
+    about: "Kami adalah kelompok praksis",
+    profileUrl: Unm,
+    bannerUrl: Banner,
     accountType: "seeker",
     cvUrl: "",
     token: "gjhsdgsjgdjh",

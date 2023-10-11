@@ -12,7 +12,8 @@ import Office from "./office.jpg";
 import JobImg from "./job.jpg";
 import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
-import UinMalang from "./UIN.png";
+import Banner from "./Banner.png";
+import Unm from "./UIN.png";
 import Poster1 from "./Poster1.jpg";
 import Poster2 from "./Poster2.jpg";
 import Poster3 from "./Poster3.jpg";
@@ -37,7 +38,8 @@ export {
   Youtube,
   Office,
   JobImg,
-  UinMalang,
+  Banner,
+  Unm,
   Poster1,
   Poster2,
   Poster3,

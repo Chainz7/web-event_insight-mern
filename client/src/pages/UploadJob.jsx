@@ -75,7 +75,7 @@ const UploadJob = () => {
               <div className="w-1/2">
                 <TextInput
                   name="date"
-                  label="Date"
+                  label="Date Start"
                   placeholder="10 / 12 / 2023"
                   type="date"
                   register={register("vacancies", {
@@ -84,11 +84,48 @@ const UploadJob = () => {
                   error={errors.vacancies ? errors.vacancies?.message : ""}
                 />
               </div>
-
-              <div className={`w-1/2 mt-2`}>
-                <label className="text-gray-600 text-sm mb-1">Day</label>
-                <DayTypes dayTitle={dayTitle} setDayTitle={setDayTitle} />
+              <div className="w-1/2">
+                <TextInput
+                  name="date"
+                  label="Date End"
+                  placeholder="10 / 12 / 2023"
+                  type="date"
+                  register={register("vacancies", {
+                    required: "Date is required!",
+                  })}
+                  error={errors.vacancies ? errors.vacancies?.message : ""}
+                />
               </div>
+            </div>
+
+            <div className="w-full flex gap-4">
+              <div className="w-1/2">
+                <TextInput
+                  name="time"
+                  label="Time Start"
+                  type="time"
+                  register={register("vacancies", {
+                    required: "Time is required!",
+                  })}
+                  error={errors.vacancies ? errors.vacancies?.message : ""}
+                />
+              </div>
+              <div className="w-1/2">
+                <TextInput
+                  name="time"
+                  label="Time End"
+                  type="time"
+                  register={register("vacancies", {
+                    required: "Time is required!",
+                  })}
+                  error={errors.vacancies ? errors.vacancies?.message : ""}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="text-gray-600 text-sm mb-1">Day</label>
+              <DayTypes dayTitle={dayTitle} setDayTitle={setDayTitle} />
             </div>
 
             <TextInput
@@ -131,6 +168,17 @@ const UploadJob = () => {
                 </span>
               )}
             </div>
+
+            <TextInput
+              name="requirement"
+              label="Event Link"
+              placeholder="eg. https://linktr.ee/fitkfest2023"
+              type="text"
+              register={register("experience", {
+                required: "- if no link",
+              })}
+              error={errors.experience ? errors.experience?.message : ""}
+            />
 
             {errMsg && (
               <span role="alert" className="text-sm text-red-500 mt-0.5">

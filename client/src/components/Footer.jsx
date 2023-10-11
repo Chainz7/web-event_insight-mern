@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className="overflow-x-hidden -mb-0.5">
         <svg
           preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
+          viewBox="0 0 800 80"
           xmlns="http://www.w3.org/2000/svg"
           style={{
             fill: "#1d4ed8",
@@ -25,8 +26,8 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="bg-[#1d4ed8] ">
-        <div className="container px-5 py-20 mx-auto ">
+      <div className="bg-[#1d4ed8]">
+        <div className="container px-5 mx-auto py-8 md:py-20">
           <div className="w-full flex flex-wrap gap-10 justify-between -mb-10 -px-4">
             {footerLinks.map(({ id, title, links }) => (
               <div className="w-auto px-4 " key={id + title}>
@@ -34,7 +35,7 @@ const Footer = () => {
                   {title}
                 </h2>
 
-                <div className="mb-10 flex flex-col gap-3 ">
+                <div className="flex flex-col gap-3 ">
                   {links.map((link, index) => (
                     <Link
                       key={link + index}
