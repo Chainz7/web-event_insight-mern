@@ -6,11 +6,11 @@ import JWT from "jsonwebtoken";
 const companySchema = new Schema({
   name: {
     type: String,
-    required: [true, " is required"],
+    required: [true, "Company Name is required"],
   },
   email: {
     type: String,
-    required: [true, "Email Name is required"],
+    required: [true, "Email is required"],
     unique: true,
     validate: validator.isEmail,
   },
@@ -20,25 +20,23 @@ const companySchema = new Schema({
     minlength: [6, "Password must be at least"],
     select: true,
   },
-  accountType: { type: String, default: "seeker" },
   contact: { type: String },
   location: { type: String },
+  about: { type: String },
   profileUrl: { type: String },
-  jobPosts: [{ type: Schema.Type.ObjectId, ref: "Jobs" }],
+  jobPosts: [{ type: Schema.Types.ObjectId, ref: "Jobs" }],
 });
 
+// middelwares
 companySchema.pre("save", async function () {
   if (!this.isModified) return;
-
   const salt = await bcrypt.genSalt(10);
-
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-// Compare Password
+//compare password
 companySchema.methods.comparePassword = async function (userPassword) {
   const isMatch = await bcrypt.compare(userPassword, this.password);
-
   return isMatch;
 };
 

@@ -13,7 +13,7 @@ const jobSchema = new mongoose.Schema(
     timeEnd: { type: String, required: [true, "Event time end is requiered"] }, // Event End Time
     dayType: { type: String, required: [true, "Day is required"] }, // Event Day
     detail: [{ desc: { type: String }, requirements: { type: String } }], // Event description & Link
-    posterUrl: { type: String }, // Event Poster
+    posterUrl: { type: String, required: [true, "Poster is required"] }, // Event Poster
     application: [{ type: Schema.Types.ObjectId, ref: "Users" }],
   },
   { timestamps: true }

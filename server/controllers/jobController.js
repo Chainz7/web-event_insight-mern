@@ -9,10 +9,14 @@ export const createJob = async (req, res, next) => {
       jobType,
       location,
       salary,
-      vacancies,
-      experience,
+      dateStart,
+      dateEnd,
+      timeStart,
+      timeEnd,
+      dayType,
       desc,
       requirements,
+      posterUrl,
     } = req.body;
 
     if (
@@ -20,8 +24,14 @@ export const createJob = async (req, res, next) => {
       !jobType ||
       !location ||
       !salary ||
+      !dateStart ||
+      !dateEnd ||
+      !timeStart ||
+      !timeEnd ||
+      !dayType ||
       !requirements ||
-      !desc
+      !desc ||
+      !posterUrl
     ) {
       next("Please Provide All Required Fields");
       return;
@@ -37,9 +47,13 @@ export const createJob = async (req, res, next) => {
       jobType,
       location,
       salary,
-      vacancies,
-      experience,
+      dateStart,
+      dateEnd,
+      timeStart,
+      timeEnd,
+      dayType,
       detail: { desc, requirements },
+      posterUrl,
       company: id,
     };
 
@@ -50,13 +64,14 @@ export const createJob = async (req, res, next) => {
     const company = await Companies.findById(id);
 
     company.jobPosts.push(job._id);
+
     const updateCompany = await Companies.findByIdAndUpdate(id, company, {
       new: true,
     });
 
     res.status(200).json({
       success: true,
-      message: "Job Posted SUccessfully",
+      message: "Event Posted SUccessfully",
       job,
     });
   } catch (error) {
@@ -72,10 +87,14 @@ export const updateJob = async (req, res, next) => {
       jobType,
       location,
       salary,
-      vacancies,
-      experience,
+      dateStart,
+      dateEnd,
+      timeStart,
+      timeEnd,
+      dayType,
       desc,
       requirements,
+      posterUrl,
     } = req.body;
     const { jobId } = req.params;
 
@@ -84,8 +103,14 @@ export const updateJob = async (req, res, next) => {
       !jobType ||
       !location ||
       !salary ||
+      !dateStart ||
+      !dateEnd ||
+      !timeStart ||
+      !timeEnd ||
+      !dayType ||
+      !requirements ||
       !desc ||
-      !requirements
+      !posterUrl
     ) {
       next("Please Provide All Required Fields");
       return;
@@ -100,9 +125,13 @@ export const updateJob = async (req, res, next) => {
       jobType,
       location,
       salary,
-      vacancies,
-      experience,
+      dateStart,
+      dateEnd,
+      timeStart,
+      timeEnd,
+      dayType,
       detail: { desc, requirements },
+      posterUrl,
       _id: jobId,
     };
 
@@ -110,7 +139,7 @@ export const updateJob = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: "Job Post Updated SUccessfully",
+      message: "Event Post Updated SUccessfully",
       jobPost,
     });
   } catch (error) {
@@ -210,7 +239,7 @@ export const getJobById = async (req, res, next) => {
 
     if (!job) {
       return res.status(200).send({
-        message: "Job Post Not Found",
+        message: "Event Post Not Found",
         success: false,
       });
     }
@@ -252,7 +281,7 @@ export const deleteJobPost = async (req, res, next) => {
 
     res.status(200).send({
       success: true,
-      messsage: "Job Post Delted Successfully.",
+      messsage: "Event Post Delted Successfully.",
     });
   } catch (error) {
     console.log(error);
