@@ -30,7 +30,7 @@ const companySchema = new Schema({
 companySchema.pre("save", async function () {
   if (!this.isModified) return;
 
-  const salt = await bcrypt.getSalt(10);
+  const salt = await bcrypt.genSalt(10);
 
   this.password = await bcrypt.hash(this.password, salt);
 });
@@ -42,8 +42,8 @@ companySchema.methods.comparePassword = async function (userPassword) {
   return isMatch;
 };
 
-//JWT Token
-companySchema.method.createToken = async function () {
+//JSON WEBTOKEN
+companySchema.methods.createJWT = function () {
   return JWT.sign({ userId: this._id }, process.env.JWT_SECRET_KEY, {
     expiresIn: "1d",
   });
