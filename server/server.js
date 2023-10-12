@@ -9,6 +9,7 @@ import mongoSanitize from "express-mongo-sanitize";
 
 import dbConnection from "./dbConfig/dbConnection.js";
 import router from "./routes/index.js";
+import errorMiddleware from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 
@@ -31,6 +32,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 app.use(router);
+
+app.use(errorMiddleware);
 
 app.listen(PORT, () => {
   console.log(`Dev Server running on port: ${PORT}`);
