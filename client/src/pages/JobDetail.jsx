@@ -123,7 +123,7 @@ const JobDetail = () => {
               </>
             ) : (
               <>
-                <p className="text-xl font-semibold">Event Poster</p>
+                <p className="text-xl font-semibold mb-4">Event Poster</p>
                 <div className="flex justify-center">
                   <img src={job?.posterUrl} />
                 </div>

@@ -49,7 +49,6 @@ export const jobs = [
       contact: "0812831028312",
       about: "Kami adalah kelompok praksis",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "FITK FESTIVAL 2023", // Event Judul
     location: "UIN Malang", // Event Lokasi
@@ -84,7 +83,6 @@ export const jobs = [
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "Matcha Beauty Town!",
     location: "Kota Kasablanka",
@@ -115,7 +113,6 @@ export const jobs = [
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "Presale Ticket 1",
     location: "MAN 4 Jakarta",
@@ -146,7 +143,6 @@ export const jobs = [
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "MIFEST COMPETITION",
     location: "Online",
@@ -177,7 +173,6 @@ export const jobs = [
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "Car Free Day Pagi-Pagi",
     location: "Sudirman Jakarta",
@@ -208,7 +203,6 @@ export const jobs = [
       about:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       profileUrl: Unm,
-      bannerUrl: Banner,
     },
     jobTitle: "PB CHAMPIONSHIP 2023",
     location: "Gool Futsal, Surabaya",
@@ -365,7 +359,7 @@ export const users = [
     contact: "0812831028312",
     about: "Kami adalah kelompok praksis",
     profileUrl: Unm,
-    bannerUrl: Banner,
+
     accountType: "seeker",
     cvUrl: "",
     token: "gjhsdgsjgdjh",

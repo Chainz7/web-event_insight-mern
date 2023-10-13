@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BsCalendarEvent } from "react-icons/bs";
 import { BiMoney, BiTimeFive } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
+import { Banner } from "../assets";
 
 const style = { color: "#0885bb" };
 
@@ -14,11 +15,7 @@ const JobCard = ({ job }) => {
       <div className="w-full md:w-[20.4rem] 2xl:w-[24.5rem] h-auto md:h-auto bg-white flex flex-col justify-between shadow-lg rounded-md border gap-4">
         {/* 1 */}
         <div className="h-36 flex justify-center items-center">
-          <img
-            src={job?.company?.bannerUrl}
-            alt={job?.company?.name}
-            className="w-44"
-          />
+          <img src={Banner} alt="UNM" className="w-44" />
         </div>
         {/* 2 */}
         <div className="bg-[#F2F2F2] p-4">

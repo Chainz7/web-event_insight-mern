@@ -23,7 +23,7 @@ function MenuList({ user, onClick }) {
     <div>
       <Menu as="div" className="inline-block text-left">
         <div className="flex">
-          <Menu.Button className="inline-flex gap-2 w-full rounded-md bg-white md:px-4 py-2 text-sm font-medium text-slate-700 hover:bg-opacity-20">
+          {/* <Menu.Button className="inline-flex items-center gap-2 w-full rounded-md bg-white md:px-4 py-2 text-sm font-medium text-slate-700 hover:bg-opacity-20">
             <div className="leading[80px] flex flex-col items-start">
               <p className="text-sm font-semibold">
                 {user?.firstName ?? user?.name}
@@ -42,7 +42,7 @@ function MenuList({ user, onClick }) {
               className="h-8 w-8 text-slate-600"
               aria-hidden="true"
             />
-          </Menu.Button>
+          </Menu.Button> */}
         </div>
 
         <Transition
@@ -59,7 +59,9 @@ function MenuList({ user, onClick }) {
               <Menu.Item>
                 {({ active }) => (
                   <Link
-                    to={`$(user?.accountType ? "user-profile" : "company-profile")`}
+                    to={`${
+                      user?.accountType ? "user-profile" : "company-profile"
+                    }`}
                     className={`${
                       active ? "bg-blue-500 text-white" : "text-gray-900"
                     } group flex w-full items-center rounded-md p-2 text-sm`}
@@ -123,7 +125,9 @@ const Navbar = () => {
               <Link to="/">Find Event</Link>
             </li>
             <li>
-              <Link to="/upload-job">Upload Event</Link>
+              <Link to="/upload-job">
+                {user === true ? "Upload Event" : ""}
+              </Link>
             </li>
             {/* <li>
               <Link to="/companies">Promotor</Link>
@@ -133,7 +137,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             {!user?.token ? (
               <Link to="/user-auth">
                 <CustomButton
@@ -146,7 +150,7 @@ const Navbar = () => {
                 <MenuList user={user} />
               </div>
             )}
-          </div>
+          </div> */}
           <button
             className="block lg:hidden text-slate-900"
             onClick={() => setIsOpen((prev) => !prev)}
@@ -166,14 +170,14 @@ const Navbar = () => {
           {/* <Link to="/companies" onClick={handleCloseNavbar}>
             Companies
           </Link> */}
-          <Link
+          {/* <Link
             onClick={handleCloseNavbar}
             to={
               user?.accountType === "seeker" ? "applly-gistory" : "upload-job"
             }
           >
             {user?.accountType === "seeker" ? "Applications" : "Upload Event"}
-          </Link>
+          </Link> */}
           <Link to="/about-us" onClick={handleCloseNavbar}>
             About
           </Link>

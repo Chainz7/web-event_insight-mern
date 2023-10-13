@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-[#1d4ed8]">
-        <div className="container px-5 mx-auto py-8 md:py-20">
+        <div className="container px-5 mx-auto py-8 md:py-20 mb-8">
           <div className="w-full flex flex-wrap gap-10 justify-between -mb-10 -px-4">
             {footerLinks.map(({ id, title, links }) => (
               <div className="w-auto px-4 " key={id + title}>
@@ -48,45 +48,6 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        <div className="">
-          <p className="container px-5 mx-auto text-white mt-2 ">
-            Subscribe to our Newsletter
-          </p>
-
-          <div className="container mx-auto px-5 pt-6 pb-8 flex flex-wrap items-center justify-between ">
-            <div className="w-full md:w-2/4 lg:w-1/3 h-16 flex items-center justify-center md:justify-start ">
-              <TextInput
-                styles="w-full flex-grow md:w-40 2xl:w-64 bg-gray-100 sm:mr-4 md-2"
-                type="email"
-                placeholder="Email Address"
-              />
-
-              <CustomButton
-                title="Subscribe"
-                containerStyles={
-                  "block bg-[#001a36] text-white px-5 py-2.5 text-md rounded hover:bg-blue-800 focus:potline-none flex-col items-center mt-2"
-                }
-              />
-            </div>
-
-            <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-              <a className="text-white text-xl  hover:scale-125 ease-in-out duration-300">
-                <FaFacebookF />
-              </a>
-              <a className="ml-3 text-white text-xl  hover:scale-125 ease-in-out duration-300">
-                <FaTwitter />
-              </a>
-              <a className="ml-3 text-white text-xl  hover:scale-125 ease-in-out duration-300">
-                <FiInstagram />
-              </a>
-
-              <a className="ml-3 text-white text-xl  hover:scale-125 ease-in-out duration-300">
-                <FaLinkedinIn />
-              </a>
-            </span>
           </div>
         </div>
 

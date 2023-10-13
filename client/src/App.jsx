@@ -40,7 +40,7 @@ function App() {
           <Route path="/companies" element={<Companies />} />
           <Route
             path={
-              user?.user?.accountType === "seeker"
+              user?.accountType === "seeker"
                 ? "/user-profile"
                 : "/user-profile/:id"
             }
